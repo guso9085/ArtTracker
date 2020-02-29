@@ -1,0 +1,21 @@
+//
+//  ContentView.swift
+//  ArtTracker
+//
+//  Created by Gustav Solis on 2/29/20.
+//  Copyright © 2020 Gustav Solis. All rights reserved.
+//
+
+import SwiftUI
+
+struct ContentView: View {
+    var body: some View {
+        Text("Hello, World!")
+    }
+}
+
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+    }
+}
