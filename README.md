@@ -1,4 +1,5 @@
 # ArtTracker
+Are you an artist? Use this tool to keep track of your current and past commissions!
 
 ## How to run project
 ### Make sure your XCode is up to date (version 11+)
