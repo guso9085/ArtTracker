@@ -24,6 +24,6 @@
 - Instead, my next step is to add the ability to complete a commission (aside from deleting it), and have a seperate page to view those commissions which have been completed. 
 - When completing a commission, I want the user to be able enter the final rate and hours spent. 
 
-![Before](Before.png)
+![Before](Before.png | width=100)
 ![Middle](Middle.png)
 ![After](After.png)
