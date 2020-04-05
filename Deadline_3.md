@@ -9,7 +9,7 @@
 - Created new data model called "DoneItem"
 - Added a "Past Commissions" button on the top right. When clicked, it takes you to a new view where it displays a user's completed commissions
 
-**Bug: Completing a commission does not remove it from the ToDoItem data model (and thus the commissions page). The user would have to swipe to delete the commission. Haven't been able to figure this one out, more complicated than it seems.**
+**Bug: Completing a commission does not remove it from the ToDoItem data model (and thus still shows up on the home view). The user has to swipe and delete the commission after completing it. Haven't been able to figure this one out, more complicated than it seems.**
 
 ## Next deadline plan
 - Add a Basic Metric View to the Past Commissions View
