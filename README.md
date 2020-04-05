@@ -10,4 +10,7 @@ Are you an artist? Use this tool to keep track of your current and past commissi
 ### To use the app
 - Enter info about an incoming commission
 - Click the green button to submit it
-- To delete a commission, either swipe on the entry below, or click edit on the top-right
+- To delete a commission, swipe on the entry you want to delete
+- To complete a commission, click an entry, enter the info, and click complete
+- Click "Past Commissions" in the top right to view completed commissions
+
