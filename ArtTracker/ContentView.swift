@@ -16,7 +16,6 @@ struct ContentView: View {
     @State private var client = ""
     @State private var rate = ""
     @State private var info = ""
-
     
     var body: some View {
         NavigationView {
@@ -56,13 +55,17 @@ struct ContentView: View {
                             }
                             
                             
+                            
+                            
                         }
                     }
                     
                 }.font(.headline)
                 Section(header: (Text("Commissions"))) {
                     ForEach(self.toDoItems) {todoItem in
-                        ToDoItemView(title: todoItem.title!, client: todoItem.client!, rate: todoItem.rate!, info: todoItem.info!, createdAt: "\(todoItem.createdAt!)")
+                        NavigationLink(destination:CompleteCommission(title: todoItem.title!, client: todoItem.client!, rate: todoItem.rate!, info: todoItem.info!)) {
+                            ToDoItemView(title: todoItem.title!, client: todoItem.client!, rate: todoItem.rate!, info: todoItem.info!, createdAt: "\(todoItem.createdAt!)")
+                        }
                     }.onDelete {indexSet in
                         let deleteItem = self.toDoItems[indexSet.first!]
                         self.managedObjectContext.delete(deleteItem)
@@ -75,7 +78,10 @@ struct ContentView: View {
                     }
                 }
         }.navigationBarTitle(Text("Commissions"))
-            .navigationBarItems(trailing: EditButton())
+            .navigationBarItems(trailing:
+                NavigationLink(destination: PastCommissionsView()){
+                    Text("Past Commissions")
+                })
         }
     
     }

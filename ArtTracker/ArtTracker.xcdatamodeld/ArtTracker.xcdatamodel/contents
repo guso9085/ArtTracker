@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="15702" systemVersion="19D76" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="DoneItem" representedClassName=".DoneItem" syncable="YES">
+        <attribute name="client" optional="YES" attributeType="String"/>
+        <attribute name="finalRate" optional="YES" attributeType="String"/>
+        <attribute name="finishedAt" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="hours" optional="YES" attributeType="String"/>
+        <attribute name="info" optional="YES" attributeType="String"/>
+        <attribute name="notes" optional="YES" attributeType="String"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+    </entity>
     <entity name="ToDoItem" representedClassName=".ToDoItem" syncable="YES">
         <attribute name="client" optional="YES" attributeType="String"/>
         <attribute name="createdAt" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
@@ -9,5 +18,6 @@
     </entity>
     <elements>
         <element name="ToDoItem" positionX="-63" positionY="-18" width="128" height="118"/>
+        <element name="DoneItem" positionX="-36" positionY="45" width="128" height="148"/>
     </elements>
 </model>
