@@ -1,6 +1,6 @@
 ### Deadline 4/3/2020
 ## Planned Requirements for this deadline
-- Add ability to complete a commission, including a seperate view and places to enter hours spent, the final rate, and any notes.
+- Add the ability to complete a commission, including a seperate view and places to enter hours spent, the final rate, and any notes.
 - Create a new data model that holds the completed commissions
 - Add a seperate view which displays a user's completed commissions
 
