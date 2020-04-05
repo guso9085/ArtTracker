@@ -20,18 +20,22 @@ struct DoneItemView: View {
     var body: some View {
         HStack {
             VStack(alignment: .leading){
-                Text(title)
+                HStack {
+                    Text(title)
                     .font(.headline)
-                Text(client)
+                    Text("Made \(finalRate)")
+                    .font(.subheadline)
+                    .foregroundColor(.green)
+                }
+                Text("Took \(hours)")
                 .font(.subheadline)
-                Text(finalRate)
+                .foregroundColor(.orange)
+                Text("Client: \(client)")
                 .font(.subheadline)
-                Text(hours)
+                Text("Info: \(info)")
                 .font(.subheadline)
-                Text(info)
-                .font(.body)
-                Text(notes)
-                .font(.body)
+                Text("Notes: \(notes)")
+                .font(.subheadline)
                 Text(finishedAt)
                 .font(.caption)
             }

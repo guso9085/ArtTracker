@@ -29,11 +29,12 @@ struct CompleteCommission: View {
                 VStack(alignment: .leading){
                     Text(title)
                         .font(.headline)
-                    Text(client)
+                    Text("Client: \(client)")
                     .font(.subheadline)
-                    Text(rate)
+                    Text("Rate: \(rate)")
                     .font(.subheadline)
-                    Text(info)
+                    .foregroundColor(.blue)
+                    Text("Info: \(info)")
                     .font(.body)
                 }
             }
